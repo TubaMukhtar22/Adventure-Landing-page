@@ -1,0 +1,298 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+ color:whitesmoke;
+}
+.active{
+  color: #d6065d;
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+.logo{
+  -webkit-text-stroke: 2px whitesmoke;
+  color: transparent;
+}
+.navbar{
+  /* background-color: aqua; */
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+ width: 100%; /*as it shrink to its content sizze so we use 100%*/ 
+} 
+.nav-links{
+  /* background-color: aqua; */
+  list-style-type:none ;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-links li{
+  margin:0 25px;
+ 
+  /* font-size: 20px; */
+
+}
+.ctn{
+  padding: 8px;
+  background-color: #d6065d;
+  border-radius: 15px;
+  color: whitesmoke;
+}
+.menu-btn{
+  position: absolute;
+  top: 20px;
+  right:20px;
+  cursor: pointer;
+  display: none;
+}
+
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images/Header.jpg');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.header-content{
+  color: whitesmoke;
+  text-align: center;
+
+}
+.header-content h2{
+  font-size: 4vmin;
+}
+.line{
+  width: 150px;
+  height: 4px;
+  background-color: #d6065d;
+  margin: 8px auto;
+  border-radius: 5px;
+}
+.header-content h1{
+  font-size: 8vmin;
+margin: 15px auto;
+}
+/* Upcoming Tour */
+section{
+  width: 80%;
+  margin: 80px auto;
+  /* background-color: aqua; */
+
+}
+.title{
+  text-align: center;
+  font-size: 4vmin;
+  color: rgb(91, 91, 167);
+ 
+}
+
+.row{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+}
+.row .col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.row .col img{
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+.row .col p {
+  /* text-align: center; */
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 10px 0;
+  width: 90%;          /* Prevents the text from touching the edges */
+}
+h4{
+  font-size: 3vmin;
+  color: rgb(91, 91, 167);
+  margin: 10px auto;
+}
+
+.event .ctn{
+  margin-top: 20px;
+}
+/* Explore */
+.explore{
+   width: 100%;
+   height: 100vh;
+   background-image: url(images/ExploreUS.jpg);
+   background-size: cover;
+   background-position: center;
+    display: flex;
+    justify-content: center;
+  align-items: center ;
+ 
+}
+.explore-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  color: whitesmoke;
+  text-align: center;
+  
+}
+.explore-content h1{
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 7vmin;
+  
+  
+}
+.line{
+  margin-bottom: 10px;
+}
+.ctn{
+  margin-top: 20px;
+}
+/* .about{
+  background-color: blueviolet;
+} */
+.about .content-col{
+  width: 40%;
+  /* background-color: aqua; */
+}
+.about .img-col{
+  width: 60%;
+  /* background-color: #d6065d; */
+}
+.about .img-gallery {
+  width: 100%;
+  display: block; /* Let the inner container handle the layout */
+}
+/* .about .img-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  /* background-color: #d6065d; */
+ 
+
+.img-gallery .myimg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);/* Forces exactly 2 columns */
+  gap: 15px; /* Replaces margins cleanly*/
+  width: 100%;
+  max-width: 520px; /*Keeps it from getting too massive on huge screens*/
+  margin: 0 auto; /*Centers the grid in its column*/
+}
+  .img-gallery .myimg img {
+  width: 100%; /* Spans the full width of its grid cell */
+  height: auto; /* Maintains original aspect ratio */
+  aspect-ratio: 1 / 1; /* Forces them to be perfect squares like your design */
+  object-fit: cover; /* Prevents stretching or distortion */
+  border-radius: 20px;
+}
+/* .img-gallery .myimg img{
+  width: 250px;
+  margin: 4px;
+  border-radius: 20px;
+} */
+.content-col h1{
+  font-size: 7vmin;
+  color: rgb(91, 91, 167);
+}
+.content-col p{
+  margin: 30px auto;
+}
+.foter{
+  background-color:rgb(67, 67, 143) ;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+/* Mobile */
+@media only screen and (max-width:850px){
+  .navbar{
+    padding: 0px;
+  }
+  .menu-btn{
+     display: flex;
+    }
+  .logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .nav-links{
+     flex-direction: column;
+     width: 100%;
+     height: 100vh;
+     justify-content: center;
+    background-color: rgb(91, 91, 167);
+    /* margin-top: -900px; */
+    display: none;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu{
+    display: flex;
+    /* margin-top: 0px; */
+  }
+  .nav-links li{
+    margin: 30px auto;
+  }
+  /* Events */
+  .row{
+    flex-direction: column;
+  }
+  .row .col{
+    margin: 20px auto;
+  }
+  .col img{
+    max-width: 90%;
+  }
+  /* Explore */
+  .explore-content{
+    width: 90%;
+  }
+  .about .col {
+    width: 100%;
+  }
+  .img-gallery{
+    justify-content: center;
+    align-items: center;
+    /* background-color: #d6065d; */
+  }
+  .img-gallery .myimg img{
+    width: 100%;
+     /* margin: 5px 20px; */
+  }
+}
+img:hover{
+  transform: scale(1.1);
+}
+img{
+  transition: transform 2s ease;
+}
